@@ -1,0 +1,4 @@
+# This are the requirements for mybinder.org
+pandas
+matplotlib
+py2neo
