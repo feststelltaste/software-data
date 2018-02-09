@@ -8,7 +8,7 @@ This repository is mere a storage for various types of data that is produced dur
 There are two main kind of ordering structures existing:
 
 * [`projects`](projects): Data gained from various projects (ordered by project name)
-* [`samples`](samples): Data gained from different kind of software data sources (ordered by type)
+* [`sources`](sources): Data gained from different kind of software data sources (ordered by type)
 
 ## Usage
 

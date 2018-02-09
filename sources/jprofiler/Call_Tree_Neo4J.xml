@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree type="Call Tree" viewMode="Tree" threadSelection="All thread groups" threadStatus="Runnable" aggregationLevel="Methods">
+  <node leaf="false" class="org.eclipse.jetty.util.thread.QueuedThreadPool$3" methodName="run" methodSignature="()V" time="60113803" count="10" selfTime="5555" lineNumber="-1" percent="65.3">
+    <node leaf="false" class="_jprofiler_annotation_class" methodName="HTTP: /db/data/transaction/commit" methodSignature="()V" time="56656933" count="8" selfTime="120" lineNumber="1" percent="61.5">
+      <node leaf="false" class="org.neo4j.server.rest.web.CollectUserAgentFilter" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V" time="56656813" count="8" selfTime="52" lineNumber="-1" percent="61.5">
+        <node leaf="false" class="javax.servlet.FilterChain" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V" time="56656371" count="8" selfTime="8041" lineNumber="-1" percent="61.5">
+          <node leaf="false" class="org.neo4j.server.rest.web.TransactionalService$2" methodName="write" methodSignature="(Ljava/io/OutputStream;)V" time="56645808" count="8" selfTime="0" lineNumber="-1" percent="61.5">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionalRequestDispatcher" methodName="dispatch" methodSignature="(Ljava/lang/Object;Lcom/sun/jersey/api/core/HttpContext;)V" time="1501" count="8" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.web.XForwardFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;)Lcom/sun/jersey/spi/container/ContainerRequest;" time="715" count="8" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.AllowAjaxFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;Lcom/sun/jersey/spi/container/ContainerResponse;)Lcom/sun/jersey/spi/container/ContainerResponse;" time="277" count="8" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.rest.web.TransactionalService$TransactionUriBuilder" methodName="&lt;init&gt;" methodSignature="(Ljavax/ws/rs/core/UriInfo;)V" time="14" count="8" selfTime="14" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.server.database.InjectableProvider$1" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="11" count="8" selfTime="11" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.server.logging.JettyLogBridge" methodName="isDebugEnabled" methodSignature="()Z" time="4" count="8" selfTime="4" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="318" count="8" selfTime="318" lineNumber="-1" percent="0.0"/>
+        <node leaf="false" class="org.neo4j.concurrent.RecentK" methodName="add" methodSignature="(Ljava/lang/Object;)V" time="38" count="8" selfTime="21" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ConcurrentHashMap" methodName="get" methodSignature="(Ljava/lang/Object;)Ljava/lang/Object;" time="10" count="8" selfTime="10" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="java.util.concurrent.atomic.AtomicLong" methodName="incrementAndGet" methodSignature="()J" time="7" count="8" selfTime="7" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="javax.servlet.http.HttpServletRequest" methodName="getHeader" methodSignature="(Ljava/lang/String;)Ljava/lang/String;" time="28" count="8" selfTime="28" lineNumber="-1" percent="0.0"/>
+        <node leaf="true" class="java.lang.String" methodName="isEmpty" methodSignature="()Z" time="6" count="8" selfTime="6" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="_jprofiler_annotation_class" methodName="HTTP: /db/data/transaction/11/commit" methodSignature="()V" time="1516138" count="1" selfTime="14" lineNumber="1" percent="1.6">
+      <node leaf="false" class="org.neo4j.server.rest.web.CollectUserAgentFilter" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V" time="1516124" count="1" selfTime="7" lineNumber="-1" percent="1.6">
+        <node leaf="false" class="javax.servlet.FilterChain" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V" time="1516094" count="1" selfTime="587" lineNumber="-1" percent="1.6">
+          <node leaf="false" class="org.neo4j.server.rest.web.TransactionalService$2" methodName="write" methodSignature="(Ljava/io/OutputStream;)V" time="1515306" count="1" selfTime="0" lineNumber="-1" percent="1.6">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionalRequestDispatcher" methodName="dispatch" methodSignature="(Ljava/lang/Object;Lcom/sun/jersey/api/core/HttpContext;)V" time="117" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.web.XForwardFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;)Lcom/sun/jersey/spi/container/ContainerRequest;" time="69" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.AllowAjaxFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;Lcom/sun/jersey/spi/container/ContainerResponse;)Lcom/sun/jersey/spi/container/ContainerResponse;" time="12" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.database.InjectableProvider$1" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="2" count="1" selfTime="2" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.server.rest.web.TransactionalService$TransactionUriBuilder" methodName="&lt;init&gt;" methodSignature="(Ljavax/ws/rs/core/UriInfo;)V" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="15" count="1" selfTime="15" lineNumber="-1" percent="0.0"/>
+        <node leaf="false" class="org.neo4j.concurrent.RecentK" methodName="add" methodSignature="(Ljava/lang/Object;)V" time="4" count="1" selfTime="2" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ConcurrentHashMap" methodName="get" methodSignature="(Ljava/lang/Object;)Ljava/lang/Object;" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="java.util.concurrent.atomic.AtomicLong" methodName="incrementAndGet" methodSignature="()J" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="javax.servlet.http.HttpServletRequest" methodName="getHeader" methodSignature="(Ljava/lang/String;)Ljava/lang/String;" time="3" count="1" selfTime="3" lineNumber="-1" percent="0.0"/>
+        <node leaf="true" class="java.lang.String" methodName="isEmpty" methodSignature="()Z" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="_jprofiler_annotation_class" methodName="HTTP: /db/data/transaction/5/commit" methodSignature="()V" time="1460570" count="1" selfTime="14" lineNumber="1" percent="1.6">
+      <node leaf="false" class="org.neo4j.server.rest.web.CollectUserAgentFilter" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V" time="1460556" count="1" selfTime="5" lineNumber="-1" percent="1.6">
+        <node leaf="false" class="javax.servlet.FilterChain" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V" time="1460506" count="1" selfTime="740" lineNumber="-1" percent="1.6">
+          <node leaf="false" class="org.neo4j.server.rest.web.TransactionalService$2" methodName="write" methodSignature="(Ljava/io/OutputStream;)V" time="1459451" count="1" selfTime="0" lineNumber="-1" percent="1.6">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionalRequestDispatcher" methodName="dispatch" methodSignature="(Ljava/lang/Object;Lcom/sun/jersey/api/core/HttpContext;)V" time="218" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.web.XForwardFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;)Lcom/sun/jersey/spi/container/ContainerRequest;" time="74" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.AllowAjaxFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;Lcom/sun/jersey/spi/container/ContainerResponse;)Lcom/sun/jersey/spi/container/ContainerResponse;" time="14" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.database.InjectableProvider$1" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="7" count="1" selfTime="7" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.server.rest.web.TransactionalService$TransactionUriBuilder" methodName="&lt;init&gt;" methodSignature="(Ljavax/ws/rs/core/UriInfo;)V" time="2" count="1" selfTime="2" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="34" count="1" selfTime="34" lineNumber="-1" percent="0.0"/>
+        <node leaf="true" class="javax.servlet.http.HttpServletRequest" methodName="getHeader" methodSignature="(Ljava/lang/String;)Ljava/lang/String;" time="5" count="1" selfTime="5" lineNumber="-1" percent="0.0"/>
+        <node leaf="false" class="org.neo4j.concurrent.RecentK" methodName="add" methodSignature="(Ljava/lang/Object;)V" time="5" count="1" selfTime="2" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ConcurrentHashMap" methodName="get" methodSignature="(Ljava/lang/Object;)Ljava/lang/Object;" time="2" count="1" selfTime="2" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="java.util.concurrent.atomic.AtomicLong" methodName="incrementAndGet" methodSignature="()J" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="isEmpty" methodSignature="()Z" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="_jprofiler_annotation_class" methodName="HTTP: /db/manage/server/jmx/query" methodSignature="()V" time="174800" count="1" selfTime="16" lineNumber="1" percent="0.2">
+      <node leaf="false" class="org.neo4j.server.rest.web.CollectUserAgentFilter" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V" time="174784" count="1" selfTime="7" lineNumber="-1" percent="0.2">
+        <node leaf="false" class="javax.servlet.FilterChain" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V" time="174754" count="1" selfTime="693" lineNumber="-1" percent="0.2">
+          <node leaf="false" class="org.neo4j.server.rest.repr.OutputFormat$1" methodName="write" methodSignature="(Ljava/io/OutputStream;)V" time="163376" count="1" selfTime="0" lineNumber="-1" percent="0.2">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionalRequestDispatcher" methodName="dispatch" methodSignature="(Ljava/lang/Object;Lcom/sun/jersey/api/core/HttpContext;)V" time="10277" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.repr.OutputFormatProvider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="181" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.repr.InputFormatProvider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="111" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.web.XForwardFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;)Lcom/sun/jersey/spi/container/ContainerRequest;" time="97" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.AllowAjaxFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;Lcom/sun/jersey/spi/container/ContainerResponse;)Lcom/sun/jersey/spi/container/ContainerResponse;" time="19" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="14" count="1" selfTime="14" lineNumber="-1" percent="0.0"/>
+        <node leaf="false" class="org.neo4j.concurrent.RecentK" methodName="add" methodSignature="(Ljava/lang/Object;)V" time="5" count="1" selfTime="3" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ConcurrentHashMap" methodName="get" methodSignature="(Ljava/lang/Object;)Ljava/lang/Object;" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="java.util.concurrent.atomic.AtomicLong" methodName="incrementAndGet" methodSignature="()J" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="javax.servlet.http.HttpServletRequest" methodName="getHeader" methodSignature="(Ljava/lang/String;)Ljava/lang/String;" time="3" count="1" selfTime="3" lineNumber="-1" percent="0.0"/>
+        <node leaf="true" class="java.lang.String" methodName="isEmpty" methodSignature="()Z" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="_jprofiler_annotation_class" methodName="HTTP: /db/data/relationship/types" methodSignature="()V" time="122725" count="1" selfTime="17" lineNumber="1" percent="0.1">
+      <node leaf="false" class="org.neo4j.server.rest.web.CollectUserAgentFilter" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V" time="122708" count="1" selfTime="8" lineNumber="-1" percent="0.1">
+        <node leaf="false" class="javax.servlet.FilterChain" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V" time="122671" count="1" selfTime="1150" lineNumber="-1" percent="0.1">
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionalRequestDispatcher" methodName="dispatch" methodSignature="(Ljava/lang/Object;Lcom/sun/jersey/api/core/HttpContext;)V" time="116592" count="1" selfTime="0" lineNumber="-1" percent="0.1">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.web.XForwardFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;)Lcom/sun/jersey/spi/container/ContainerRequest;" time="4904" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.AllowAjaxFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;Lcom/sun/jersey/spi/container/ContainerResponse;)Lcom/sun/jersey/spi/container/ContainerResponse;" time="18" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.logging.JettyLogBridge" methodName="isDebugEnabled" methodSignature="()Z" time="5" count="5" selfTime="5" lineNumber="-1" percent="0.0"/>
+          <node leaf="false" class="org.neo4j.server.database.DatabaseProvider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="2" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="17" count="1" selfTime="17" lineNumber="-1" percent="0.0"/>
+        <node leaf="true" class="javax.servlet.http.HttpServletRequest" methodName="getHeader" methodSignature="(Ljava/lang/String;)Ljava/lang/String;" time="6" count="1" selfTime="6" lineNumber="-1" percent="0.0"/>
+        <node leaf="false" class="org.neo4j.concurrent.RecentK" methodName="add" methodSignature="(Ljava/lang/Object;)V" time="5" count="1" selfTime="2" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ConcurrentHashMap" methodName="get" methodSignature="(Ljava/lang/Object;)Ljava/lang/Object;" time="2" count="1" selfTime="2" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="java.util.concurrent.atomic.AtomicLong" methodName="incrementAndGet" methodSignature="()J" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="isEmpty" methodSignature="()Z" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="_jprofiler_annotation_class" methodName="HTTP: /db/data/labels" methodSignature="()V" time="121206" count="1" selfTime="20" lineNumber="1" percent="0.1">
+      <node leaf="false" class="org.neo4j.server.rest.web.CollectUserAgentFilter" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V" time="121186" count="1" selfTime="9" lineNumber="-1" percent="0.1">
+        <node leaf="false" class="javax.servlet.FilterChain" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V" time="121146" count="1" selfTime="3536" lineNumber="-1" percent="0.1">
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionalRequestDispatcher" methodName="dispatch" methodSignature="(Ljava/lang/Object;Lcom/sun/jersey/api/core/HttpContext;)V" time="113336" count="1" selfTime="0" lineNumber="-1" percent="0.1">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.web.XForwardFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;)Lcom/sun/jersey/spi/container/ContainerRequest;" time="2173" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.repr.OutputFormat$1" methodName="write" methodSignature="(Ljava/io/OutputStream;)V" time="1871" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.repr.OutputFormatProvider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="184" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.repr.InputFormatProvider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="25" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.AllowAjaxFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;Lcom/sun/jersey/spi/container/ContainerResponse;)Lcom/sun/jersey/spi/container/ContainerResponse;" time="16" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.DatabaseActions$Provider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="2" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.rest.web.RestfulGraphDatabase$1" methodName="&lt;init&gt;" methodSignature="(Lorg/neo4j/server/rest/web/RestfulGraphDatabase;)V" time="2" count="1" selfTime="2" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.server.database.InjectableProvider$1" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="20" count="1" selfTime="20" lineNumber="-1" percent="0.0"/>
+        <node leaf="true" class="javax.servlet.http.HttpServletRequest" methodName="getHeader" methodSignature="(Ljava/lang/String;)Ljava/lang/String;" time="5" count="1" selfTime="5" lineNumber="-1" percent="0.0"/>
+        <node leaf="false" class="org.neo4j.concurrent.RecentK" methodName="add" methodSignature="(Ljava/lang/Object;)V" time="5" count="1" selfTime="3" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ConcurrentHashMap" methodName="get" methodSignature="(Ljava/lang/Object;)Ljava/lang/Object;" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="java.util.concurrent.atomic.AtomicLong" methodName="incrementAndGet" methodSignature="()J" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="isEmpty" methodSignature="()Z" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="_jprofiler_annotation_class" methodName="HTTP: /db/data/transaction" methodSignature="()V" time="18769" count="2" selfTime="30" lineNumber="1" percent="0.0">
+      <node leaf="false" class="org.neo4j.server.rest.web.CollectUserAgentFilter" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V" time="18739" count="2" selfTime="11" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="javax.servlet.FilterChain" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V" time="18644" count="2" selfTime="9902" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="org.neo4j.server.rest.web.TransactionalService$1" methodName="write" methodSignature="(Ljava/io/OutputStream;)V" time="7100" count="2" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionalRequestDispatcher" methodName="dispatch" methodSignature="(Ljava/lang/Object;Lcom/sun/jersey/api/core/HttpContext;)V" time="967" count="2" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.web.XForwardFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;)Lcom/sun/jersey/spi/container/ContainerRequest;" time="614" count="2" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.AllowAjaxFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;Lcom/sun/jersey/spi/container/ContainerResponse;)Lcom/sun/jersey/spi/container/ContainerResponse;" time="28" count="2" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.rest.web.TransactionalService$TransactionUriBuilder" methodName="&lt;init&gt;" methodSignature="(Ljavax/ws/rs/core/UriInfo;)V" time="21" count="2" selfTime="21" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.server.logging.JettyLogBridge" methodName="isDebugEnabled" methodSignature="()Z" time="9" count="2" selfTime="9" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.server.database.InjectableProvider$1" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="3" count="2" selfTime="3" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="65" count="2" selfTime="65" lineNumber="-1" percent="0.0"/>
+        <node leaf="true" class="javax.servlet.http.HttpServletRequest" methodName="getHeader" methodSignature="(Ljava/lang/String;)Ljava/lang/String;" time="9" count="2" selfTime="9" lineNumber="-1" percent="0.0"/>
+        <node leaf="false" class="org.neo4j.concurrent.RecentK" methodName="add" methodSignature="(Ljava/lang/Object;)V" time="9" count="2" selfTime="6" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ConcurrentHashMap" methodName="get" methodSignature="(Ljava/lang/Object;)Ljava/lang/Object;" time="2" count="2" selfTime="2" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="java.util.concurrent.atomic.AtomicLong" methodName="incrementAndGet" methodSignature="()J" time="1" count="2" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="isEmpty" methodSignature="()Z" time="1" count="2" selfTime="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="_jprofiler_annotation_class" methodName="HTTP: /db/manage/server/version/" methodSignature="()V" time="13818" count="1" selfTime="14" lineNumber="1" percent="0.0">
+      <node leaf="false" class="org.neo4j.server.rest.web.CollectUserAgentFilter" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V" time="13804" count="1" selfTime="7" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="javax.servlet.FilterChain" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V" time="13773" count="1" selfTime="5097" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionalRequestDispatcher" methodName="dispatch" methodSignature="(Ljava/lang/Object;Lcom/sun/jersey/api/core/HttpContext;)V" time="8544" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.web.XForwardFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;)Lcom/sun/jersey/spi/container/ContainerRequest;" time="80" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.logging.JettyLogBridge" methodName="isDebugEnabled" methodSignature="()Z" time="26" count="5" selfTime="26" lineNumber="-1" percent="0.0"/>
+          <node leaf="false" class="org.neo4j.server.rest.web.AllowAjaxFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;Lcom/sun/jersey/spi/container/ContainerResponse;)Lcom/sun/jersey/spi/container/ContainerResponse;" time="23" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.NeoServerProvider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="3" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="16" count="1" selfTime="16" lineNumber="-1" percent="0.0"/>
+        <node leaf="false" class="org.neo4j.concurrent.RecentK" methodName="add" methodSignature="(Ljava/lang/Object;)V" time="5" count="1" selfTime="4" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ConcurrentHashMap" methodName="get" methodSignature="(Ljava/lang/Object;)Ljava/lang/Object;" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="javax.servlet.http.HttpServletRequest" methodName="getHeader" methodSignature="(Ljava/lang/String;)Ljava/lang/String;" time="3" count="1" selfTime="3" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="_jprofiler_annotation_class" methodName="HTTP: /db/data/propertykeys" methodSignature="()V" time="12937" count="1" selfTime="158" lineNumber="1" percent="0.0">
+      <node leaf="false" class="org.neo4j.server.rest.web.CollectUserAgentFilter" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V" time="12779" count="1" selfTime="9" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="javax.servlet.FilterChain" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V" time="12744" count="1" selfTime="7487" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="org.neo4j.server.rest.repr.OutputFormat$1" methodName="write" methodSignature="(Ljava/io/OutputStream;)V" time="2978" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionalRequestDispatcher" methodName="dispatch" methodSignature="(Ljava/lang/Object;Lcom/sun/jersey/api/core/HttpContext;)V" time="1983" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.web.XForwardFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;)Lcom/sun/jersey/spi/container/ContainerRequest;" time="143" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.repr.OutputFormatProvider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="116" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.repr.InputFormatProvider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="16" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.AllowAjaxFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;Lcom/sun/jersey/spi/container/ContainerResponse;)Lcom/sun/jersey/spi/container/ContainerResponse;" time="14" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.database.InjectableProvider$1" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="3" count="1" selfTime="3" lineNumber="-1" percent="0.0"/>
+          <node leaf="false" class="org.neo4j.server.rest.web.DatabaseActions$Provider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="2" count="1" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.logging.JettyLogBridge" methodName="isDebugEnabled" methodSignature="()Z" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.server.rest.web.RestfulGraphDatabase$1" methodName="&lt;init&gt;" methodSignature="(Lorg/neo4j/server/rest/web/RestfulGraphDatabase;)V" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="16" count="1" selfTime="16" lineNumber="-1" percent="0.0"/>
+        <node leaf="false" class="org.neo4j.concurrent.RecentK" methodName="add" methodSignature="(Ljava/lang/Object;)V" time="5" count="1" selfTime="2" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ConcurrentHashMap" methodName="get" methodSignature="(Ljava/lang/Object;)Ljava/lang/Object;" time="2" count="1" selfTime="2" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="java.util.concurrent.atomic.AtomicLong" methodName="incrementAndGet" methodSignature="()J" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="javax.servlet.http.HttpServletRequest" methodName="getHeader" methodSignature="(Ljava/lang/String;)Ljava/lang/String;" time="4" count="1" selfTime="4" lineNumber="-1" percent="0.0"/>
+        <node leaf="true" class="java.lang.String" methodName="isEmpty" methodSignature="()Z" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="false" class="_jprofiler_annotation_class" methodName="HTTP: /db/data/" methodSignature="()V" time="9593" count="3" selfTime="117" lineNumber="1" percent="0.0">
+      <node leaf="false" class="org.neo4j.server.rest.web.CollectUserAgentFilter" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;Ljavax/servlet/FilterChain;)V" time="9476" count="3" selfTime="31" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="javax.servlet.FilterChain" methodName="doFilter" methodSignature="(Ljavax/servlet/ServletRequest;Ljavax/servlet/ServletResponse;)V" time="9320" count="3" selfTime="2317" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionalRequestDispatcher" methodName="dispatch" methodSignature="(Ljava/lang/Object;Lcom/sun/jersey/api/core/HttpContext;)V" time="3182" count="2" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.repr.OutputFormat$1" methodName="write" methodSignature="(Ljava/io/OutputStream;)V" time="2873" count="2" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.repr.OutputFormatProvider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="482" count="3" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.web.XForwardFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;)Lcom/sun/jersey/spi/container/ContainerRequest;" time="312" count="3" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.repr.InputFormatProvider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="107" count="3" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.AllowAjaxFilter" methodName="filter" methodSignature="(Lcom/sun/jersey/spi/container/ContainerRequest;Lcom/sun/jersey/spi/container/ContainerResponse;)Lcom/sun/jersey/spi/container/ContainerResponse;" time="38" count="3" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.server.rest.web.DatabaseActions$Provider" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="4" count="3" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.rest.web.RestfulGraphDatabase$1" methodName="&lt;init&gt;" methodSignature="(Lorg/neo4j/server/rest/web/RestfulGraphDatabase;)V" time="3" count="3" selfTime="3" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.server.database.InjectableProvider$1" methodName="getValue" methodSignature="(Lcom/sun/jersey/api/core/HttpContext;)Ljava/lang/Object;" time="1" count="3" selfTime="1" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.server.logging.JettyLogBridge" methodName="isDebugEnabled" methodSignature="()Z" time="1" count="3" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="split" methodSignature="(Ljava/lang/String;)[Ljava/lang/String;" time="99" count="3" selfTime="99" lineNumber="-1" percent="0.0"/>
+        <node leaf="true" class="javax.servlet.http.HttpServletRequest" methodName="getHeader" methodSignature="(Ljava/lang/String;)Ljava/lang/String;" time="12" count="3" selfTime="12" lineNumber="-1" percent="0.0"/>
+        <node leaf="false" class="org.neo4j.concurrent.RecentK" methodName="add" methodSignature="(Ljava/lang/Object;)V" time="12" count="3" selfTime="6" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ConcurrentHashMap" methodName="get" methodSignature="(Ljava/lang/Object;)Ljava/lang/Object;" time="3" count="3" selfTime="3" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="java.util.concurrent.atomic.AtomicLong" methodName="incrementAndGet" methodSignature="()J" time="3" count="3" selfTime="3" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="java.lang.String" methodName="isEmpty" methodSignature="()Z" time="2" count="3" selfTime="2" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+    <node leaf="true" class="org.neo4j.server.logging.JettyLogBridge" methodName="isDebugEnabled" methodSignature="()Z" time="759" count="960" selfTime="759" lineNumber="-1" percent="0.0"/>
+  </node>
+  <node leaf="false" class="java.util.concurrent.ThreadPoolExecutor$Worker" methodName="run" methodSignature="()V" time="31931256" count="4" selfTime="302" lineNumber="-1" percent="34.7">
+    <node leaf="false" class="org.neo4j.io.pagecache.impl.muninn.BackgroundTask" methodName="run" methodSignature="()V" time="31930935" count="2" selfTime="183" lineNumber="-1" percent="34.7">
+      <node leaf="false" class="org.neo4j.io.pagecache.impl.muninn.FlushTask" methodName="run" methodSignature="(Lorg/neo4j/io/pagecache/impl/muninn/MuninnPageCache;)V" time="31736003" count="1" selfTime="73" lineNumber="-1" percent="34.5">
+        <node leaf="false" class="org.neo4j.io.pagecache.impl.muninn.MuninnPageCache" methodName="continuouslyFlushPages" methodSignature="()V" time="31735930" count="1" selfTime="69" lineNumber="-1" percent="34.5">
+          <node leaf="false" class="org.neo4j.io.pagecache.impl.muninn.MuninnPageCache" methodName="flushAtIORatio" methodSignature="(D)J" time="31735861" count="36" selfTime="16738529" lineNumber="-1" percent="34.5">
+            <node leaf="true" class="org.neo4j.concurrent.jsr166e.StampedLock" methodName="isWriteLocked" methodSignature="()Z" time="5424284" count="28814472" selfTime="5424284" lineNumber="-1" percent="5.9"/>
+            <node leaf="true" class="org.neo4j.io.pagecache.impl.muninn.MuninnPage" methodName="isDirty" methodSignature="()Z" time="4920957" count="28814472" selfTime="4920957" lineNumber="-1" percent="5.3"/>
+            <node leaf="true" class="java.lang.Thread" methodName="isInterrupted" methodSignature="()Z" time="4651809" count="28814472" selfTime="4651809" lineNumber="-1" percent="5.1"/>
+            <node leaf="true" class="java.lang.Thread" methodName="currentThread" methodSignature="()Ljava/lang/Thread;" time="124" count="36" selfTime="124" lineNumber="-1" percent="0.0"/>
+            <node leaf="true" class="org.neo4j.io.pagecache.tracing.DefaultPageCacheTracer" methodName="beginCacheFlush" methodSignature="()Lorg/neo4j/io/pagecache/tracing/MajorFlushEvent;" time="85" count="36" selfTime="85" lineNumber="-1" percent="0.0"/>
+            <node leaf="true" class="org.neo4j.io.pagecache.tracing.DefaultPageCacheTracer$8" methodName="close" methodSignature="()V" time="42" count="36" selfTime="42" lineNumber="-1" percent="0.0"/>
+            <node leaf="true" class="java.util.concurrent.TimeUnit" methodName="toNanos" methodSignature="(J)J" time="31" count="36" selfTime="31" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="org.neo4j.io.pagecache.impl.muninn.EvictionTask" methodName="run" methodSignature="(Lorg/neo4j/io/pagecache/impl/muninn/MuninnPageCache;)V" time="194749" count="1" selfTime="68" lineNumber="-1" percent="0.2">
+        <node leaf="false" class="org.neo4j.io.pagecache.impl.muninn.MuninnPageCache" methodName="continuouslySweepPages" methodSignature="()V" time="194681" count="1" selfTime="87" lineNumber="-1" percent="0.2">
+          <node leaf="false" class="org.neo4j.io.pagecache.impl.muninn.MuninnPageCache" methodName="parkUntilEvictionRequired" methodSignature="(I)I" time="194594" count="1" selfTime="62" lineNumber="-1" percent="0.2">
+            <node leaf="false" class="org.neo4j.io.pagecache.impl.muninn.MuninnPageCache" methodName="parkEvictor" methodSignature="(J)V" time="145128" count="5734" selfTime="0" lineNumber="-1" percent="0.2">
+              <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+            </node>
+            <node leaf="false" class="org.neo4j.io.pagecache.impl.muninn.MuninnPageCache" methodName="getFreelistHead" methodSignature="()Ljava/lang/Object;" time="49404" count="5734" selfTime="0" lineNumber="-1" percent="0.1">
+              <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node leaf="true" class="org.neo4j.server.logging.JettyLogBridge" methodName="isDebugEnabled" methodSignature="()Z" time="16" count="16" selfTime="16" lineNumber="-1" percent="0.0"/>
+    <node leaf="true" class="org.neo4j.server.logging.JettyLogBridge" methodName="debug" methodSignature="(Ljava/lang/String;[Ljava/lang/Object;)V" time="3" count="3" selfTime="3" lineNumber="-1" percent="0.0"/>
+  </node>
+  <node leaf="false" class="org.neo4j.helpers.NamedThreadFactory$2" methodName="run" methodSignature="()V" time="12039" count="2" selfTime="27" lineNumber="-1" percent="0.0">
+    <node leaf="false" class="java.lang.Thread" methodName="run" methodSignature="()V" time="12012" count="2" selfTime="343" lineNumber="-1" percent="0.0">
+      <node leaf="false" class="org.neo4j.kernel.impl.api.index.sampling.IndexSamplingController$1" methodName="run" methodSignature="()V" time="7355" count="7" selfTime="12" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="org.neo4j.kernel.impl.api.index.sampling.IndexSamplingController" methodName="sampleIndexes" methodSignature="(Lorg/neo4j/kernel/impl/api/index/sampling/IndexSamplingMode;)V" time="7343" count="7" selfTime="56" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="org.neo4j.kernel.impl.api.index.sampling.IndexSamplingJobQueue" methodName="addAll" methodSignature="(ZLjava/util/Iterator;)V" time="5807" count="7" selfTime="111" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="org.neo4j.kernel.impl.api.index.sampling.IndexSamplingJobQueue" methodName="add" methodSignature="(ZLjava/lang/Object;)V" time="5614" count="77" selfTime="0" lineNumber="-1" percent="0.0">
+              <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+            </node>
+            <node leaf="true" class="java.util.Iterator" methodName="hasNext" methodSignature="()Z" time="45" count="84" selfTime="45" lineNumber="-1" percent="0.0"/>
+            <node leaf="true" class="java.util.Iterator" methodName="next" methodSignature="()Ljava/lang/Object;" time="37" count="77" selfTime="37" lineNumber="-1" percent="0.0"/>
+          </node>
+          <node leaf="false" class="org.neo4j.kernel.impl.api.index.sampling.IndexSamplingController" methodName="scheduleSampling" methodSignature="(Lorg/neo4j/kernel/impl/api/index/sampling/IndexSamplingMode;Lorg/neo4j/kernel/impl/api/index/IndexMap;)V" time="745" count="7" selfTime="134" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="org.neo4j.kernel.impl.api.index.sampling.IndexSamplingController" methodName="tryScheduleSampling" methodSignature="(Lorg/neo4j/kernel/impl/api/index/IndexMap;)V" time="611" count="7" selfTime="36" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="org.neo4j.kernel.impl.api.index.sampling.IndexSamplingController" methodName="tryEmptyLock" methodSignature="()Z" time="346" count="7" selfTime="0" lineNumber="-1" percent="0.0">
+                <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+              </node>
+              <node leaf="false" class="org.neo4j.kernel.impl.api.index.sampling.IndexSamplingJobTracker" methodName="canExecuteMoreSamplingJobs" methodSignature="()Z" time="193" count="7" selfTime="0" lineNumber="-1" percent="0.0">
+                <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+              </node>
+              <node leaf="false" class="org.neo4j.kernel.impl.api.index.sampling.IndexSamplingJobQueue" methodName="poll" methodSignature="()Ljava/lang/Object;" time="33" count="7" selfTime="0" lineNumber="-1" percent="0.0">
+                <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+              </node>
+              <node leaf="true" class="java.util.concurrent.locks.Lock" methodName="unlock" methodSignature="()V" time="3" count="7" selfTime="3" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+          <node leaf="false" class="org.neo4j.kernel.impl.api.index.IndexMapReference" methodName="indexMapSnapshot" methodSignature="()Lorg/neo4j/kernel/impl/api/index/IndexMap;" time="693" count="7" selfTime="14" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="org.neo4j.kernel.impl.api.index.IndexMap" methodName="clone" methodSignature="()Lorg/neo4j/kernel/impl/api/index/IndexMap;" time="679" count="7" selfTime="88" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="org.neo4j.kernel.impl.api.index.IndexMap" methodName="cloneMap" methodSignature="(Ljava/util/Map;)Ljava/util/Map;" time="581" count="14" selfTime="0" lineNumber="-1" percent="0.0">
+                <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+              </node>
+              <node leaf="true" class="org.neo4j.kernel.impl.api.index.IndexMap" methodName="&lt;init&gt;" methodSignature="(Ljava/util/Map;Ljava/util/Map;)V" time="10" count="7" selfTime="10" lineNumber="-1" percent="0.0"/>
+            </node>
+          </node>
+          <node leaf="false" class="org.neo4j.kernel.impl.api.index.IndexMap" methodName="descriptors" methodSignature="()Ljava/util/Iterator;" time="42" count="7" selfTime="10" lineNumber="-1" percent="0.0">
+            <node leaf="true" class="java.util.Set" methodName="iterator" methodSignature="()Ljava/util/Iterator;" time="25" count="7" selfTime="25" lineNumber="-1" percent="0.0"/>
+            <node leaf="true" class="java.util.Map" methodName="keySet" methodSignature="()Ljava/util/Set;" time="7" count="7" selfTime="7" lineNumber="-1" percent="0.0"/>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="org.neo4j.kernel.NeoStoreDataSource$BufferedIdMaintenanceController$1" methodName="run" methodSignature="()V" time="3398" count="68" selfTime="14" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="org.neo4j.kernel.NeoStoreDataSource$BufferedIdMaintenanceController" methodName="maintenance" methodSignature="()V" time="3384" count="68" selfTime="200" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="org.neo4j.kernel.impl.store.id.BufferingIdGeneratorFactory" methodName="maintenance" methodSignature="()V" time="3184" count="68" selfTime="957" lineNumber="-1" percent="0.0">
+            <node leaf="false" class="org.neo4j.kernel.impl.store.id.BufferingIdGenerator" methodName="maintenance" methodSignature="()V" time="2227" count="272" selfTime="1386" lineNumber="-1" percent="0.0">
+              <node leaf="false" class="org.neo4j.kernel.impl.store.id.DelayedBuffer" methodName="maintenance" methodSignature="()V" time="841" count="272" selfTime="432" lineNumber="-1" percent="0.0">
+                <node leaf="true" class="java.util.Deque" methodName="isEmpty" methodSignature="()Z" time="271" count="272" selfTime="271" lineNumber="-1" percent="0.0"/>
+                <node leaf="true" class="org.neo4j.kernel.impl.store.id.DelayedBuffer" methodName="flush" methodSignature="()V" time="138" count="272" selfTime="138" lineNumber="-1" percent="0.0"/>
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node leaf="false" class="org.neo4j.kernel.impl.transaction.log.checkpoint.CheckPointScheduler$1" methodName="run" methodSignature="()V" time="651" count="6" selfTime="46" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="org.neo4j.kernel.impl.transaction.log.checkpoint.CheckPointerImpl" methodName="checkPointIfNeeded" methodSignature="(Lorg/neo4j/kernel/impl/transaction/log/checkpoint/TriggerInfo;)J" time="268" count="6" selfTime="42" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="org.neo4j.kernel.impl.store.MetaDataStore" methodName="getLastClosedTransactionId" methodSignature="()J" time="128" count="6" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="false" class="org.neo4j.kernel.impl.transaction.log.checkpoint.CheckPointThresholds$1" methodName="isCheckPointingNeeded" methodSignature="(JLorg/neo4j/function/Consumer;)Z" time="55" count="6" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="java.util.concurrent.locks.Lock" methodName="lock" methodSignature="()V" time="38" count="6" selfTime="38" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="java.util.concurrent.locks.Lock" methodName="unlock" methodSignature="()V" time="5" count="6" selfTime="5" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="false" class="org.neo4j.kernel.impl.util.Neo4jJobScheduler" methodName="schedule" methodSignature="(Lorg/neo4j/kernel/impl/util/JobScheduler$Group;Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Lorg/neo4j/kernel/impl/util/JobScheduler$JobHandle;" time="215" count="6" selfTime="36" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.util.concurrent.ScheduledThreadPoolExecutor" methodName="schedule" methodSignature="(Ljava/lang/Runnable;JLjava/util/concurrent/TimeUnit;)Ljava/util/concurrent/ScheduledFuture;" time="168" count="6" selfTime="168" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.kernel.impl.util.Neo4jJobScheduler$PooledJobHandle" methodName="&lt;init&gt;" methodSignature="(Ljava/util/concurrent/Future;)V" time="10" count="6" selfTime="10" lineNumber="-1" percent="0.0"/>
+          <node leaf="true" class="org.neo4j.kernel.impl.util.JobScheduler$Group" methodName="strategy" methodSignature="()Lorg/neo4j/kernel/impl/util/JobScheduler$SchedulingStrategy;" time="1" count="6" selfTime="1" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="true" class="org.neo4j.kernel.impl.transaction.log.checkpoint.SimpleTriggerInfo" methodName="&lt;init&gt;" methodSignature="(Ljava/lang/String;)V" time="122" count="6" selfTime="122" lineNumber="-1" percent="0.0"/>
+      </node>
+      <node leaf="false" class="org.neo4j.server.AbstractNeoServer$1" methodName="run" methodSignature="()V" time="265" count="2" selfTime="7" lineNumber="-1" percent="0.0">
+        <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionHandleRegistry" methodName="rollbackSuspendedTransactionsIdleSince" methodSignature="(J)V" time="247" count="2" selfTime="7" lineNumber="-1" percent="0.0">
+          <node leaf="false" class="org.neo4j.server.rest.transactional.TransactionHandleRegistry" methodName="rollbackSuspended" methodSignature="(Lorg/neo4j/function/Predicate;)V" time="238" count="2" selfTime="0" lineNumber="-1" percent="0.0">
+            <node leaf="true" time="0" count="0" selfTime="0" lineNumber="-1" percent="0.0" filtered="true"/>
+          </node>
+          <node leaf="true" class="org.neo4j.server.rest.transactional.TransactionHandleRegistry$1" methodName="&lt;init&gt;" methodSignature="(Lorg/neo4j/server/rest/transactional/TransactionHandleRegistry;J)V" time="2" count="2" selfTime="2" lineNumber="-1" percent="0.0"/>
+        </node>
+        <node leaf="false" class="org.neo4j.helpers.Clock$1" methodName="currentTimeMillis" methodSignature="()J" time="11" count="2" selfTime="6" lineNumber="-1" percent="0.0">
+          <node leaf="true" class="java.lang.System" methodName="currentTimeMillis" methodSignature="()J" time="5" count="2" selfTime="5" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+    </node>
+  </node>
+</tree>

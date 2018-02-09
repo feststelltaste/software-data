@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tree type="Call Tree" viewMode="Tree" threadSelection="All thread groups" threadStatus="Runnable" aggregationLevel="Methods">
+  <node leaf="false" class="com.intellij.rt.execution.application.AppMain" methodName="main" methodSignature="([Ljava/lang/String;)V" time="21901" count="1" selfTime="151" lineNumber="-1" percent="100.0">
+    <node leaf="false" class="de.feststelltaste.sandbox.Main" methodName="main" methodSignature="([Ljava/lang/String;)V" time="21750" count="1" selfTime="1335" lineNumber="-1" percent="99.3">
+      <node leaf="false" class="de.feststelltaste.sandbox.business.Hello" methodName="execute" methodSignature="()V" time="17183" count="10" selfTime="378" lineNumber="-1" percent="78.5">
+        <node leaf="false" class="de.feststelltaste.sandbox.business.World" methodName="execute" methodSignature="()V" time="9907" count="10" selfTime="3799" lineNumber="-1" percent="45.2">
+          <node leaf="false" class="de.feststelltaste.sandbox.output.Printer" methodName="print" methodSignature="(Ljava/lang/String;)V" time="6108" count="70" selfTime="3974" lineNumber="-1" percent="27.9">
+            <node leaf="true" class="java.io.PrintStream" methodName="print" methodSignature="(Ljava/lang/String;)V" time="2134" count="70" selfTime="2134" lineNumber="-1" percent="9.7"/>
+          </node>
+        </node>
+        <node leaf="false" class="de.feststelltaste.sandbox.output.Printer" methodName="print" methodSignature="(Ljava/lang/String;)V" time="6898" count="230" selfTime="554" lineNumber="-1" percent="31.5">
+          <node leaf="true" class="java.io.PrintStream" methodName="print" methodSignature="(Ljava/lang/String;)V" time="6344" count="230" selfTime="6344" lineNumber="-1" percent="29.0"/>
+        </node>
+      </node>
+      <node leaf="false" class="de.feststelltaste.sandbox.business.Hello" methodName="&lt;init&gt;" methodSignature="()V" time="2704" count="1" selfTime="2599" lineNumber="-1" percent="12.3">
+        <node leaf="true" class="de.feststelltaste.sandbox.output.Printer" methodName="&lt;init&gt;" methodSignature="()V" time="77" count="1" selfTime="77" lineNumber="-1" percent="0.4"/>
+        <node leaf="false" class="de.feststelltaste.sandbox.business.World" methodName="&lt;init&gt;" methodSignature="()V" time="28" count="1" selfTime="21" lineNumber="-1" percent="0.1">
+          <node leaf="true" class="de.feststelltaste.sandbox.output.Printer" methodName="&lt;init&gt;" methodSignature="()V" time="7" count="1" selfTime="7" lineNumber="-1" percent="0.0"/>
+        </node>
+      </node>
+      <node leaf="false" class="de.feststelltaste.sandbox.business.World" methodName="execute" methodSignature="()V" time="523" count="3" selfTime="20" lineNumber="-1" percent="2.4">
+        <node leaf="false" class="de.feststelltaste.sandbox.output.Printer" methodName="print" methodSignature="(Ljava/lang/String;)V" time="503" count="21" selfTime="29" lineNumber="-1" percent="2.3">
+          <node leaf="true" class="java.io.PrintStream" methodName="print" methodSignature="(Ljava/lang/String;)V" time="474" count="21" selfTime="474" lineNumber="-1" percent="2.2"/>
+        </node>
+      </node>
+      <node leaf="false" class="de.feststelltaste.sandbox.business.World" methodName="&lt;init&gt;" methodSignature="()V" time="5" count="1" selfTime="4" lineNumber="-1" percent="0.0">
+        <node leaf="true" class="de.feststelltaste.sandbox.output.Printer" methodName="&lt;init&gt;" methodSignature="()V" time="1" count="1" selfTime="1" lineNumber="-1" percent="0.0"/>
+      </node>
+    </node>
+  </node>
+</tree>
